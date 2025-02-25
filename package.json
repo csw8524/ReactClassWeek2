@@ -1,5 +1,6 @@
 {
   "name": "reactclassweek2",
+  "homepage": "https://csw8524.github.io/ReactClassWeek2/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +13,7 @@
   "dependencies": {
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
