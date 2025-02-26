@@ -117,7 +117,7 @@ export default function App() {
                       </span>
                     </h5>
                     <p className="card-text">
-                      商品描述：{tempProduct.category}
+                      商品描述：{tempProduct.description}
                     </p>
                     <p className="card-text">商品內容：{tempProduct.content}</p>
                     <div className="d-flex">
@@ -128,14 +128,16 @@ export default function App() {
                     </div>
                     <h5 className="mt-3">更多圖片：</h5>
                     <div className="d-flex flex-wrap">
-                      {tempProduct.imagesUrl?.map((url, index) => (
-                        <img
-                          key={index}
-                          src={url}
-                          className="images"
-                          alt="副圖"
-                        />
-                      ))}
+                      {tempProduct.imagesUrl?.map((url, index) => {
+                        if (url) {
+                          return (<img
+                            key={index}
+                            src={url}
+                            className="images"
+                            alt="副圖"
+                          />)
+                        }
+                      })}
                     </div>
                   </div>
                 </div>
